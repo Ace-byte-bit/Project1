@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Isoko Digital — our mission, our hubs, our story.">
+  <meta name="theme-color" content="#4a90e2">
+  <title>About — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="news">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">About</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <article class="info-card">
+
+      <h1>About Isoko Digital</h1>
+
+      <p class="lead">
+        Isoko Digital is a source — a wellspring of trusted digital life for
+        Rwanda. A place where news, bookmarks, business and community come
+        together under one roof.
+      </p>
+
+      <section>
+        <h2>Our Mission</h2>
+        <p>
+          We believe Rwandans deserve a digital space that reflects their
+          country — multilingual, mobile-first, and built by locals for locals.
+          Isoko Digital is our answer: a lightweight, accessible platform that
+          works on any device, anywhere in Rwanda.
+        </p>
+      </section>
+
+      <section>
+        <h2>What You'll Find Here</h2>
+
+        <div class="hubs-list">
+
+          <a href="../rwanda-brief/index.html" class="hub-item">
+            <span class="hub-emoji" aria-hidden="true">📰</span>
+            <div>
+              <h3>The Rwanda Brief</h3>
+              <p>Daily news and analysis from Rwanda and the world.</p>
+            </div>
+          </a>
+
+          <a href="../bookmark/index.html" class="hub-item">
+            <span class="hub-emoji" aria-hidden="true">🔖</span>
+            <div>
+              <h3>Bookmarks</h3>
+              <p>Save, organize and revisit your favorite links.</p>
+            </div>
+          </a>
+
+          <a href="../advert-hub/index.html" class="hub-item">
+            <span class="hub-emoji" aria-hidden="true">📢</span>
+            <div>
+              <h3>Advert Hub</h3>
+              <p>Promote your business to a growing Rwandan audience.</p>
+            </div>
+          </a>
+
+          <a href="../fun/index.html" class="hub-item">
+            <span class="hub-emoji" aria-hidden="true">🎮</span>
+            <div>
+              <h3>Fun Zone</h3>
+              <p>Games, quizzes and riddles — for when you need a break.</p>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          Isoko Digital started as a personal project — a way to learn web
+          development while building something useful for Rwanda. What began
+          as a single news page has grown into a multi-section platform,
+          hand-built with care and no shortcuts.
+        </p>
+        <p>
+          Every feature you see here was built from scratch: the animated
+          gradients, the news system, the bookmark manager, the signup wizard.
+          No frameworks, no templates — just HTML, CSS, and JavaScript.
+        </p>
+      </section>
+
+      <section>
+        <h2>Get Involved</h2>
+        <p>
+          Have a story to share? Want to advertise? Just want to say hello?
+          We'd love to hear from you.
+        </p>
+        <p class="cta-row">
+          <a href="../contact/index.html" class="btn btn-primary">Contact Us</a>
+          <a href="../index.html" class="btn btn-outline">← Back Home</a>
+        </p>
+      </section>
+
+      <footer class="meta">
+        <p>Built in Kigali 🇷🇼 · © <span class="year"></span></p>
+      </footer>
+
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.year').forEach(el => {
+        el.textContent = new Date().getFullYear();
+      });
+    });
+  </script>
+</body>
+</html>

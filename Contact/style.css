@@ -1,0 +1,146 @@
+/* =========================================================
+   CONTACT — page-specific styles
+   Shared rules: ../shared/theme.css
+   ========================================================= */
+
+.contact-wrap {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: var(--text-dim);
+  font-size: 1rem;
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+/* ---------- Info tiles ---------- */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.info-tile {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.info-emoji {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.info-tile h3 {
+  font-size: 0.85rem;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.35rem;
+}
+
+.info-tile a,
+.info-tile span {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.info-tile a:hover,
+.info-tile a:focus-visible {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+/* ---------- Form ---------- */
+.contact-form {
+  padding: 28px 26px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #fff 50%),
+    linear-gradient(135deg, #fff 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(50% - 2px),
+    calc(100% - 13px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 34px;
+}
+
+.contact-form select option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.contact-form .hint {
+  font-size: 0.75rem;
+  color: var(--text-mute);
+  min-height: 1em;
+}
+
+.contact-form .hint.error { color: #ff6b6b; }
+
+.contact-form input.invalid,
+.contact-form select.invalid,
+.contact-form textarea.invalid {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .contact-form { padding: 22px 18px; }
+}

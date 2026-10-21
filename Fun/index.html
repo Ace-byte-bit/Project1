@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fun Zone — games, quizzes and riddles on Isoko Digital.">
+  <meta name="theme-color" content="#f857a6">
+  <title>Fun Zone — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="fun">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">Fun Zone</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <header class="fun-header">
+      <h1>🎮 Fun Zone</h1>
+      <p class="lead">Games, quizzes and riddles — for when you need a break.</p>
+    </header>
+
+    <section class="fun-grid">
+
+      <a href="quiz.html" class="fun-card">
+        <span class="fun-emoji" aria-hidden="true">🧠</span>
+        <h2>Rwanda Trivia</h2>
+        <p>Test your knowledge of Rwanda — 5 questions.</p>
+        <span class="fun-cta">Play →</span>
+      </a>
+
+      <a href="#" class="fun-card fun-card-soon">
+        <span class="fun-emoji" aria-hidden="true">🔮</span>
+        <h2>Daily Riddle</h2>
+        <p>One puzzle per day. Can you crack it?</p>
+        <span class="fun-cta fun-cta-soon">Coming soon</span>
+      </a>
+
+      <a href="#" class="fun-card fun-card-soon">
+        <span class="fun-emoji" aria-hidden="true">🤔</span>
+        <h2>Would You Rather</h2>
+        <p>Vote and see what others chose.</p>
+        <span class="fun-cta fun-cta-soon">Coming soon</span>
+      </a>
+
+      <a href="#" class="fun-card fun-card-soon">
+        <span class="fun-emoji" aria-hidden="true">🎯</span>
+        <h2>Quick Reflex</h2>
+        <p>How fast are you? Find out.</p>
+        <span class="fun-cta fun-cta-soon">Coming soon</span>
+      </a>
+
+    </section>
+
+    <section class="fun-stats" aria-label="Your stats">
+      <div class="fun-stat">
+        <span class="fun-stat-num" id="playsCount">0</span>
+        <span class="fun-stat-label">Games Played</span>
+      </div>
+      <div class="fun-stat">
+        <span class="fun-stat-num" id="bestScore">—</span>
+        <span class="fun-stat-label">Best Score</span>
+      </div>
+      <div class="fun-stat">
+        <span class="fun-stat-num" id="streakCount">0</span>
+        <span class="fun-stat-label">Win Streak</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Rwanda Brief — news, trends and analysis from Rwanda and the world, by Isoko Digital.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<title>Article — The Rwanda Brief</title>
+<script src="../shared/appearance.js"></script>
+<link rel="stylesheet" href="../shared/theme.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="news">
+
+<header>
+  <div class="top-bar">
+    <a class="logo" href="index.html">The Rwanda <span>Brief</span></a>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, trends...">
+      <span class="search-icon">🔍</span>
+    </div>
+    <div class="header-right">
+      <div class="auth-buttons" id="authArea"></div>
+      <span class="section-label">Isoko Digital</span>
+    </div>
+  <nav class="tabs">
+    <div class="tabs-inner">
+      <a class="tab" href="index.html">All</a>
+      <a class="tab" href="category.html?cat=rwanda">🇷🇼 Rwanda</a>
+      <a class="tab" href="category.html?cat=health">Health</a>
+      <a class="tab" href="category.html?cat=economy">Economy</a>
+      <a class="tab" href="category.html?cat=justice">Justice</a>
+      <a class="tab" href="category.html?cat=family">Family</a>
+      <a class="tab" href="category.html?cat=climate">Climate</a>
+      <a class="tab" href="category.html?cat=world">🌍 World</a>
+    </div>
+  </nav>
+  <div data-settings-slot></div>
+</header>
+
+<div class="ticker">
+  <span class="ticker-label">LIVE</span>
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<div class="reader-container" id="readerContent"></div>
+
+<footer>
+  <strong>The Rwanda Brief</strong> — Independent news &amp; trends from Isoko Digital.<br>
+  Rwanda 🇷🇼 · World 🌍 · Updated live · © <span class="year">2026</span>
+</footer>
+
+<script src="../shared/ui.js"></script>
+<script src="../shared/auth.js"></script>
+<script src="../shared/data-helpers.js"></script>
+<script src="../shared/i18n.js"></script>
+<script src="../shared/setting.js"></script>
+<script src="data.js"></script>
+<script src="article.js"></script>
+</body>
+</html>

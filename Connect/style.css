@@ -1,0 +1,186 @@
+/* =========================================================
+   CONNECT — signup wizard styles
+   Shared rules: ../shared/theme.css
+   ========================================================= */
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  min-height: 420px;
+  margin: auto;
+  padding: 40px 32px 28px;
+  background: var(--glass-strong);
+  color: #111;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Progress dots ---------- */
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dot.active { background: #111; transform: scale(1.35); }
+.dot.done   { background: var(--gold); }
+
+/* ---------- Steps ---------- */
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.step[hidden] { display: none; }
+
+.step.vanish        { opacity: 0; transform: translateX(-30px); pointer-events: none; }
+.step.enter         { opacity: 0; transform: translateX(30px); }
+.step.vanish-back   { opacity: 0; transform: translateX(30px);  pointer-events: none; }
+.step.enter-back    { opacity: 0; transform: translateX(-30px); }
+
+/* ---------- Typography ---------- */
+.card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #111;
+  margin-bottom: 0;
+}
+
+.card .sub {
+  font-size: 0.88rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* ---------- Fields ---------- */
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111;
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder { color: #b8bcc4; }
+
+.field input:focus {
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.field input.invalid {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.field .hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+  min-height: 1em;
+}
+
+.field .hint.error { color: #dc2626; }
+
+/* ---------- Buttons ---------- */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #111;
+  background: var(--gold);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s;
+}
+
+.btn-primary:hover { background: var(--gold-soft); transform: translateY(-1px); }
+.btn-primary:active { transform: scale(0.98); }
+
+.back-row {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.back-arrow {
+  background: none;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-arrow:hover { color: #111; background: #f3f4f6; }
+
+/* ---------- Success ---------- */
+.success-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 3.5rem;
+  animation: pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pop {
+  0%   { transform: scale(0.3); opacity: 0; }
+  60%  { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .card { padding: 32px 22px 22px; min-height: 400px; }
+  .card h2 { font-size: 1.2rem; }
+}

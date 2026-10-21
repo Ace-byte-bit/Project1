@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Isoko Digital — send us a message, share a story, or inquire about advertising.">
+  <meta name="theme-color" content="#00c9ff">
+  <title>Contact — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="auth">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">Contact</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <div class="contact-wrap">
+
+      <header class="contact-header">
+        <h1>Get in touch</h1>
+        <p>Have a story, question or partnership idea? We read every message.</p>
+      </header>
+
+      <div class="contact-info">
+
+        <div class="info-tile">
+          <span class="info-emoji" aria-hidden="true">📧</span>
+          <h3>Email</h3>
+          <a href="mailto:hello@isokodigital.rw">hello@isokodigital.rw</a>
+        </div>
+
+        <div class="info-tile">
+          <span class="info-emoji" aria-hidden="true">📢</span>
+          <h3>Advertising</h3>
+          <a href="mailto:ads@isokodigital.rw">ads@isokodigital.rw</a>
+        </div>
+
+        <div class="info-tile">
+          <span class="info-emoji" aria-hidden="true">📍</span>
+          <h3>Location</h3>
+          <span>Kigali, Rwanda</span>
+        </div>
+
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="Full name" required>
+          <span class="hint" id="nameHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <span class="hint" id="emailHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" required>
+            <option value="" disabled selected>Choose a topic</option>
+            <option value="story">Share a story</option>
+            <option value="advertising">Advertising inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="partnership">Partnership</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="hint" id="subjectHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message…" rows="6" required minlength="10"></textarea>
+          <span class="hint" id="messageHint"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy policy for Isoko Digital — how we handle your data.">
+  <meta name="theme-color" content="#4a90e2">
+  <title>Privacy — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="news">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">Privacy</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <article class="policy-card">
+
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: <span class="year"></span></p>
+
+      <p class="lead">
+        Your privacy matters. This page explains — in plain language —
+        what data Isoko Digital collects, how we use it, and what control you have.
+      </p>
+
+      <section>
+        <h2>1. What We Collect</h2>
+        <p>
+          Isoko Digital stores the following data <strong>only in your browser</strong>
+          (via <code>localStorage</code>):
+        </p>
+        <ul>
+          <li><strong>Account info</strong> — your name and email when you sign up</li>
+          <li><strong>Bookmarks</strong> — links you save on the Bookmark page</li>
+          <li><strong>Likes &amp; saves</strong> — articles you interact with</li>
+        </ul>
+        <p>
+          <strong>None of this data is sent to any server.</strong> It stays
+          on your device and belongs to you.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. What We Don't Do</h2>
+        <ul>
+          <li>❌ We don't sell your data</li>
+          <li>❌ We don't track you across other websites</li>
+          <li>❌ We don't run advertising trackers</li>
+          <li>❌ We don't use your data for anything except the features you see</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Cookies &amp; Local Storage</h2>
+        <p>
+          We don't use cookies. We use <code>localStorage</code> — a similar
+          browser feature that keeps data on your device. Clearing your browser
+          data will erase everything Isoko Digital has stored about you.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Third Parties</h2>
+        <p>Two external services help the site work:</p>
+        <ul>
+          <li>
+            <strong>Google Favicons</strong> — shows site icons on the
+            Bookmark page. Google may log the domain you're fetching.
+          </li>
+          <li>
+            <strong>Your hosting provider</strong> — serves the pages. They
+            may collect basic visitor logs (IP address, browser type).
+          </li>
+        </ul>
+        <p>No personal data from your Isoko Digital account is shared with either.</p>
+      </section>
+
+      <section>
+        <h2>5. Your Rights</h2>
+        <p>Because all data lives in your browser, you're always in control:</p>
+        <ul>
+          <li><strong>See your data</strong> — open DevTools → Application → Local Storage</li>
+          <li><strong>Delete your data</strong> — clear your browser storage</li>
+          <li><strong>Port your data</strong> — copy the localStorage entries to your own file</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Children</h2>
+        <p>
+          Isoko Digital is not directed at children under 13. We do not knowingly
+          collect information from children.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Changes</h2>
+        <p>
+          If this policy changes, we'll update the date at the top of this page.
+          Continued use of the site means you accept the current version.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <p>
+          Questions about privacy? Email
+          <a href="mailto:privacy@isokodigital.rw">privacy@isokodigital.rw</a>.
+        </p>
+      </section>
+
+      <footer class="meta">
+        <p>Governing law: Republic of Rwanda · © <span class="year"></span></p>
+      </footer>
+
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.year').forEach(el => {
+        el.textContent = new Date().getFullYear();
+      });
+    });
+  </script>
+</body>
+</html>

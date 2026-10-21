@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isoko Digital Bookmarks — save, organize and revisit your favorite links.">
+  <meta name="theme-color" content="#ff9a44">
+  <title>Bookmarks — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="book">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">Bookmarks</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <div class="bm-wrap">
+
+      <header class="page-header">
+        <h1>🔖 Bookmarks</h1>
+        <p class="subtitle">Save, organize and revisit your favorite links.</p>
+      </header>
+
+      <div class="add-form">
+        <input type="text" id="titleInput" placeholder="Title (e.g. YouTube)" autocomplete="off">
+        <input type="text" id="urlInput" placeholder="URL (e.g. youtube.com)" autocomplete="off">
+        <select id="categorySelect">
+          <option value="other">Other</option>
+          <option value="work">Work</option>
+          <option value="fun">Fun</option>
+          <option value="learning">Learning</option>
+        </select>
+        <button id="addBtn" type="button">Add</button>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" id="searchInput" placeholder="🔍 Search bookmarks…">
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="work">Work</button>
+          <button class="filter-btn" data-filter="fun">Fun</button>
+          <button class="filter-btn" data-filter="learning">Learning</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div>Total <span class="stat-value" id="totalCount">0</span></div>
+        <div>Showing <span class="stat-value" id="showingCount">0</span></div>
+        <div>Categories <span class="stat-value" id="categoryCount">0</span></div>
+      </div>
+
+      <div id="emptyState">
+        <p class="emoji">🔖</p>
+        <p class="title">No bookmarks yet</p>
+        <p class="subtitle">Add your first bookmark above!</p>
+      </div>
+
+      <ul id="bookmarkList"></ul>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

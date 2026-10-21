@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advert Hub — promote your business to a growing Rwandan audience on Isoko Digital.">
+  <meta name="theme-color" content="#11998e">
+  <title>Advert Hub — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="advert">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Isoko Digital</a>
+    <span class="brand-current">Advert Hub</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <header class="hero-advert">
+      <h1>📢 Advert Hub</h1>
+      <p class="lead">Reach Rwandans where they read, save and share.</p>
+    </header>
+
+    <section class="why-section">
+      <h2>Why Isoko Digital?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-emoji">🎯</span>
+          <h3>Targeted</h3>
+          <p>Rwandan audience — locally and in the diaspora.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">📱</span>
+          <h3>Mobile-first</h3>
+          <p>Over 80% of our readers browse on phones.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">💰</span>
+          <h3>Affordable</h3>
+          <p>Pricing designed for small businesses in Rwanda.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">⚡</span>
+          <h3>Fast setup</h3>
+          <p>Your ad goes live within 24 hours of approval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <h2>Choose Your Plan</h2>
+      <div class="pricing-grid">
+
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="price">
+            <span class="amount">10,000</span>
+            <span class="currency">RWF</span>
+          </p>
+          <p class="duration">7 days</p>
+          <ul class="features">
+            <li>✓ Sidebar banner</li>
+            <li>✓ Homepage placement</li>
+            <li>✓ Basic analytics</li>
+          </ul>
+          <a href="#inquiry" class="btn-plan" data-plan="Starter">Choose Starter</a>
+        </div>
+
+        <div class="plan plan-featured">
+          <span class="badge">POPULAR</span>
+          <h3>Standard</h3>
+          <p class="price">
+            <span class="amount">25,000</span>
+            <span class="currency">RWF</span>
+          </p>
+          <p class="duration">30 days</p>
+          <ul class="features">
+            <li>✓ Sidebar + inline banners</li>
+            <li>✓ Featured position</li>
+            <li>✓ Detailed analytics</li>
+            <li>✓ Weekly performance report</li>
+          </ul>
+          <a href="#inquiry" class="btn-plan" data-plan="Standard">Choose Standard</a>
+        </div>
+
+        <div class="plan">
+          <h3>Premium</h3>
+          <p class="price">
+            <span class="amount">60,000</span>
+            <span class="currency">RWF</span>
+          </p>
+          <p class="duration">30 days</p>
+          <ul class="features">
+            <li>✓ Full-site banner</li>
+            <li>✓ Featured article integration</li>
+            <li>✓ Homepage hero spot</li>
+            <li>✓ Weekly report + strategy call</li>
+          </ul>
+          <a href="#inquiry" class="btn-plan" data-plan="Premium">Choose Premium</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="inquiry-section" id="inquiry">
+      <h2>Start Your Inquiry</h2>
+      <p class="inquiry-sub">
+        Tell us about your business and we'll reach out within 24 hours.
+      </p>
+
+      <form class="inquiry-form" id="inquiryForm" novalidate>
+
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" placeholder="e.g. Kigali Coffee Co." required>
+          <span class="hint" id="businessHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="contactName">Your name</label>
+          <input type="text" id="contactName" placeholder="Full name" required>
+          <span class="hint" id="contactNameHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" placeholder="you@example.com" required>
+          <span class="hint" id="contactEmailHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="plan">Plan of interest</label>
+          <select id="plan" required>
+            <option value="" disabled selected>Choose a plan</option>
+            <option value="Starter">Starter — 10,000 RWF</option>
+            <option value="Standard">Standard — 25,000 RWF</option>
+            <option value="Premium">Premium — 60,000 RWF</option>
+            <option value="Custom">Custom / Not sure</option>
+          </select>
+          <span class="hint" id="planHint"></span>
+        </div>
+
+        <div class="field">
+          <label for="adMessage">Tell us about your business</label>
+          <textarea id="adMessage" rows="5" placeholder="What do you sell? Who's your audience?" required minlength="20"></textarea>
+          <span class="hint" id="adMessageHint"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

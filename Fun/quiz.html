@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rwanda Trivia — test your knowledge of Rwanda on Isoko Digital.">
+  <title>Rwanda Trivia — Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="fun">
+
+  <header class="site-header">
+    <a href="index.html" class="brand">← Fun Zone</a>
+    <span class="brand-current">Rwanda Trivia</span>
+    <div data-settings-slot></div>
+  </header>
+
+  <main class="page">
+
+    <div class="quiz-wrap">
+
+      <div class="quiz-screen" id="startScreen">
+        <h1>🧠 Rwanda Trivia</h1>
+        <p class="quiz-sub">5 questions. No pressure. See how well you know Rwanda.</p>
+        <button type="button" class="btn-quiz" id="startBtn">Start Quiz →</button>
+        <p class="quiz-meta">Best score: <strong id="bestScoreStart">—</strong></p>
+      </div>
+
+      <div class="quiz-screen" id="questionScreen" hidden>
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="progressBar"></div>
+        </div>
+        <p class="quiz-counter">
+          Question <span id="qNum">1</span> of <span id="qTotal">5</span>
+        </p>
+        <h2 class="quiz-question" id="questionText">…</h2>
+        <div class="quiz-answers" id="answersWrap"></div>
+      </div>
+
+      <div class="quiz-screen" id="resultScreen" hidden>
+        <h1 class="result-emoji" id="resultEmoji">🎉</h1>
+        <h2 id="resultTitle">Well played!</h2>
+        <p class="result-score">
+          You got <strong id="scoreNum">0</strong> out of <strong id="scoreTotal">5</strong> right.
+        </p>
+        <p class="result-message" id="resultMessage"></p>
+        <div class="result-actions">
+          <button type="button" class="btn-quiz" id="retryBtn">Try Again</button>
+          <a href="index.html" class="btn-quiz btn-quiz-outline">← Back to Fun Zone</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy</a>
+    </nav>
+    <p>&copy; <span class="year"></span> Isoko Digital · Built in Kigali 🇷🇼</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

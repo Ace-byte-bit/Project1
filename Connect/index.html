@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Isoko Digital — one account for news, bookmarks and community.">
+  <meta name="theme-color" content="#fc466b">
+  <title>Join Isoko Digital</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script src="../shared/appearance.js"></script>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="join">
+
+  <div class="card" id="wizard">
+
+    <div class="progress" aria-hidden="true">
+      <span class="dot active" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+      <span class="dot" data-dot="3"></span>
+    </div>
+
+    <form class="step" data-step="1" novalidate>
+      <h2>What's your email?</h2>
+      <p class="sub">We'll use this for your account.</p>
+
+      <div class="field">
+        <label for="emailInput">Email address</label>
+        <input type="email" id="emailInput" placeholder="you@example.com"
+               autocomplete="email" required>
+        <span class="hint" id="emailHint"></span>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary">Next →</button>
+      </div>
+    </form>
+
+    <form class="step" data-step="2" hidden novalidate>
+      <h2>Choose a password</h2>
+      <p class="sub">At least 6 characters.</p>
+
+      <div class="field">
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" placeholder="••••••••"
+               autocomplete="new-password" minlength="6" required>
+        <span class="hint" id="passwordHint"></span>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary">Next →</button>
+      </div>
+
+      <div class="back-row">
+        <button type="button" class="back-arrow" data-back>← Back</button>
+      </div>
+    </form>
+
+    <form class="step" data-step="3" hidden novalidate>
+      <h2>What's your name?</h2>
+      <p class="sub">So we know what to call you.</p>
+
+      <div class="field">
+        <label for="nameInput">Full name</label>
+        <input type="text" id="nameInput" placeholder="Your name"
+               autocomplete="name" required>
+        <span class="hint" id="nameHint"></span>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary">Create Account</button>
+      </div>
+
+      <div class="back-row">
+        <button type="button" class="back-arrow" data-back>← Back</button>
+      </div>
+    </form>
+
+    <div class="step" data-step="4" hidden>
+      <div class="success-box">
+        <div class="success-icon">🎉</div>
+        <h2>All set!</h2>
+        <p class="sub" id="successMsg">Setting up your account…</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/auth.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="../shared/setting.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
